@@ -36,7 +36,7 @@ const MeetingRoster = () => {
     return <RosterAttendeeWrapper key={chimeAttendeeId} attendeeId={chimeAttendeeId} />;
   });
 
-  const color =  defaultTheme.colors.myCustomColorForAnotherLibrary;
+  const color = defaultTheme.colors.myCustomColorForAnotherLibrary;
 
   return (
     <Roster className="roster">
@@ -48,7 +48,7 @@ const MeetingRoster = () => {
         badge={attendees.length}
       />
       <RosterGroup>{attendeeItems}</RosterGroup>
-      <p color={color}>
+      <p style={{ color: color }}>
         Test
       </p>
     </Roster>

@@ -4,6 +4,7 @@
 import { ControlBarButton, Cog, useMeetingManager, Camera, Sound, Dots, DeviceLabels } from 'amazon-chime-sdk-component-library-react';
 import React from 'react';
 import DevicePermissionPrompt from '../DevicePermissionPrompt';
+import { StyledP } from './Styled';
 
 const DevicePermissionControl = (props: { deviceLabels: DeviceLabels }) => {
   const meetingManager = useMeetingManager();
@@ -27,6 +28,7 @@ const DevicePermissionControl = (props: { deviceLabels: DeviceLabels }) => {
       <>
         <ControlBarButton icon={icon} onClick={handleClick} label={label} />
         <DevicePermissionPrompt />
+        <StyledP>Test</StyledP>
       </>
   );
 };
